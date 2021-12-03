@@ -27,6 +27,6 @@ export const urls = [
   "github-production-user-asset-6210df.s3.amazonaws.com",
   "github-production-repository-file-5c1aeb.s3.amazonaws.com",
   "githubstatus.com",
-  "github.community1",
+  "github.community",
   "media.githubusercontent.com",
 ];
