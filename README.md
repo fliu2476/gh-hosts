@@ -1,5 +1,11 @@
 # Github Hosts
 
+<div style="font-size: 1.5rem;">
+  <a href="./README.md">English</a> |
+  <a href="./README.ZH_CN.md">中文</a>
+</div>
+</br>
+
 > Improve access speed in mainland China.
 
 ### Last github hosts
