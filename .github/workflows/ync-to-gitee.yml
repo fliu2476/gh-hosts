@@ -1,0 +1,22 @@
+name: Sync to Gitee
+on:
+  push:
+    branches: [main]  # 触发分支（根据你的实际分支名修改）
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取所有历史提交
+          
+      - name: Sync to Gitee
+        run: |
+          git remote add gitee https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_TOKEN }}@gitee.com/你的Gitee用户名/仓库名.git
+          git push gitee main:main  # 推送到Gitee的main分支（分支名按需修改）
+          # 如需同步标签：git push gitee --tags
+        env:
+          # 设置Git全局用户（避免权限错误）
+          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
