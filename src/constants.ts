@@ -1,4 +1,4 @@
-export const urls = [
+export const URLS = [
   "github.githubassets.com",
   "central.github.com",
   "desktop.githubusercontent.com",
@@ -30,3 +30,10 @@ export const urls = [
   "github.community",
   "media.githubusercontent.com",
 ];
+
+export const TEMPLATE_PATH = "./README.template.md";
+export const OUTPUT_PATHS = {
+  HOSTS: "./hosts",
+  README: "./README.md",
+  README_CN: "./README-ZH_CN.md",
+};
